@@ -22,7 +22,8 @@
     "hubot-scripts": ">=2.0.4",
     "optparse": "1.0.3",
     "hubot-hipchat": "https://github.com/hipchat/hubot-hipchat/tarball/master",
-    "open-uri": "0.4.1"
+    "open-uri": "0.4.1",
+    "scribe-node": "0.0.24"
   }
 }
 
