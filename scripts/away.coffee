@@ -2,4 +2,4 @@
 
 module.exports = (robot) ->
   robot.hear /who sent this?/i, (msg) ->
-    msg.send msg.message.user
+    msg.send JSON.stringify(msg.message.user)
