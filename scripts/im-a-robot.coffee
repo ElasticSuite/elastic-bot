@@ -1,4 +1,4 @@
-# listens for "that's hip" and prints disney hipsters
+# Gives elastic-bot character
 
 module.exports = (robot) ->
   robot.hear /.*(Elastic:).*/, (msg) ->
