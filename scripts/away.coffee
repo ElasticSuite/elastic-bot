@@ -3,7 +3,7 @@
 open = require("open-uri")
 
 module.exports = (robot) ->
-  robot.hear /who sent this?/i, (msg) ->
+  robot.hear /.*/i, (msg) ->
     user_id = msg.message.user.id
     url = "https://api.hipchat.com/v1/users/show?user_id=" + user_id + "&auth_token=" + process.env.HUBOT_HIPCHAT_TOKEN
     open url, (err, res) ->
