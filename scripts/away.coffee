@@ -2,4 +2,10 @@
 
 module.exports = (robot) ->
   robot.hear /who sent this?/i, (msg) ->
-    msg.send JSON.stringify(msg.message.user)
+    user_id = msg.message.user.id
+    url = "https://api.hipchat.com/v1/users/show?user_id=" + user_id + "&auth_token=" + HUBOT_HIPCHAT_TOKEN
+    open url, options, (err, res) ->
+        if !err
+          msg.send JSON.stringify(res) 
+
+    
