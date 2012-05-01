@@ -2,7 +2,7 @@
 
 module.exports = (robot) ->
   robot.hear /.*(that'?s (\w+ +)?hip).*/, (msg) ->
-    imageMe msg, "\"hipster disney\"", (url) ->
+    imageMe msg, "\"hipster\"", (url) ->
       msg.send url
 
 imageMe = (msg, query, cb) ->
