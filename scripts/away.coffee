@@ -11,6 +11,6 @@ module.exports = (robot) ->
         user = res.user
         if user.status == 'away'
           first_name = user.name.split(' ')[0]
-          msg.send "Hmmmmm. #{first_name} seems to be away and here at the same moment. That's disturbing...but I'm only a robot. Beep boop"
+          msg.send "whirrrrrr. #{first_name}'s away. And here. Beep boop"
 
     
